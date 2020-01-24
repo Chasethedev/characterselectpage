@@ -1,0 +1,116 @@
+
+
+#mainContainer {
+	display: flex;
+	border: 2px solid black;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-between;
+	background-color: white;
+	font-family: Papyrus;
+}
+
+h1 {
+	align-self: center;
+}
+
+#heroDiv {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column-reverse;	
+	text-align: center;
+	margin-top: 2%;
+	
+}
+
+.heroPicStyle{	
+	height: 350px;
+	width: 340px;
+	align-self: center;
+	border: 2px solid grey;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	box-shadow: 0px 4px 8px;
+}
+
+.wizardbg {
+	background: url('img/wizardhero.jpg') no-repeat top center;
+}
+
+.warriorbg {
+	background: url('img/warriorhero.jpg') no-repeat top center;
+}
+
+.tankbg {
+	background: url('img/tankerhero.jpg') no-repeat top center;
+}
+
+
+#btnContainer {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 3%;
+}
+
+.genericBtnWrap {
+	border-radius: 50px;
+	height: 80px;
+	width: 80px;
+	/*box-shadow: 0px 2px 6px 2px;*/
+}
+
+.genericBtn {
+	border-radius: 50px;
+	height: 90px;
+	width: 90px;
+	font-size: 18px;
+	border: 0px solid black;
+	border-bottom: 3px solid black;
+	align-self: flex-end;
+	outline: none;	
+	transform: translateY(0px);
+	transition: 1s;
+	text-align: center;
+}
+
+.genericBtn:hover {
+	cursor: pointer;
+	color: white;
+	transform: translateY(-6px);
+	transition: 1s;
+}
+.genericBtn:active {
+	cursor: pointer;
+	color: white;
+	transform: translateY(-3.5px);
+	transition: 0s;
+}
+
+#wizard {
+	background-color: purple;
+}
+
+#warrior {
+	background-color: blue;
+}
+
+#tank {
+	background-color: orange;
+}
+
+#sorceress {
+	background-color: darkred;
+}
+
+.heroQuoteBtnStyle {
+	width: 150px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 8px;
+	align-self: center;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+
