@@ -1,16 +1,18 @@
-
+* {
+	margin: 0;
+}
 
 #mainContainer {
 	display: flex;
-	border: 2px solid black;
 	flex-direction: column;
 	height: 100vh;
 	justify-content: space-between;
-	background-color: white;
+	background: url('img/bgimage.jpg') no-repeat center center;
 	font-family: Papyrus;
 }
 
 h1 {
+	margin-top: 2%;
 	align-self: center;
 }
 
@@ -29,7 +31,6 @@ h1 {
 	align-self: center;
 	border: 2px solid grey;
 	border-radius: 2px;
-	margin-bottom: 20px;
 	box-shadow: 0px 4px 8px;
 }
 
@@ -49,13 +50,13 @@ h1 {
 #btnContainer {
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 3%;
 }
 
 .genericBtnWrap {
 	border-radius: 50px;
 	height: 80px;
 	width: 80px;
+	margin-bottom: 2%;
 	/*box-shadow: 0px 2px 6px 2px;*/
 }
 
@@ -112,5 +113,16 @@ h1 {
 	color: white;
 	cursor: pointer;
 	outline: none;
+	font-family: Papyrus;
+	line-height: 1.2;
+	padding-top: 3px;
+
 }
+
+.heroQuoteBtnStyle:hover {
+	background-color: red;
+}
+
+
+
 

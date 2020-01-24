@@ -19,20 +19,20 @@ tankQuoteBtn.classList.add('heroQuoteBtnStyle')
 tankQuoteBtn.innerText = 'CLICK FOR HERO\'S  QUOTE';
 
 class Hero {
-	constructor(type, ability){
+	constructor(type, ability, gender){
 		this.type = type;
 		this.ability = ability;
+		this.gender = gender;
 	}
 	introduce() {
 		heroDiv.appendChild(heroInfo)
-		heroInfo.innerText = `You have chosen a ${this.type}! The ${this.type} uses ${this.ability} for his abilities!`;
-
+		heroInfo.innerText = `You have chosen a ${this.type}! The ${this.type} uses ${this.ability} for ${this.gender} abilities!`;
 	}
 }
 
 class Wizard extends Hero {
-	constructor(type, ability) {
-		super(type, ability)
+	constructor(type, ability, gender) {
+		super(type, ability, gender)
 	}
 	quote() {
 		heroInfo.innerText = `"A foolish ${this.type} uses ${this.ability} ignorantly and impatiently. Doing so will surely result in umimagenable consequences. Vast knowledge is vast power and vast power requires vast retraint."`;
@@ -40,8 +40,8 @@ class Wizard extends Hero {
 };
 
 class Warrior extends Hero {
-	constructor(type, ability) {
-		super(type, ability)
+	constructor(type, ability, gender) {
+		super(type, ability, gender)
 	}
 	quote() {
 		heroInfo.innerText = `"Let he who opposes that what is just and right meet the worlds greatest ${this.type} and fall upon ${this.ability}!" Let the immoral feel the power of the virtuous. Let the merciless die mercilessly.`;
@@ -49,17 +49,17 @@ class Warrior extends Hero {
 }
 
 class Tank extends Hero {
-	constructor(type, ability) {
-		super(type, ability)
+	constructor(type, ability, gender) {
+		super(type, ability, gender)
 	}
 	quote() {
 		heroInfo.innerText = `"I am a ${this.type} that lives by a code. Let my ${this.ability} offer protection to all of those who accompany me into battle. None of my sworn brothers shall fall before I fall myself!"`;
 	}
 }
 
-const heroWizard = new Wizard('wizard', 'various forms of magic')
-const heroWarrior = new Warrior('warrior', 'his sword and axe')
-const heroTank = new Tank('tank', 'enchanted armor and natural damage resistance')
+const heroWizard = new Wizard('wizard', 'various forms of magic', 'his')
+const heroWarrior = new Warrior('warrior', 'his sword and axe', 'his')
+const heroTank = new Tank('tank', 'enchanted armor and natural damage resistance', 'his')
 
 wizardbtn.addEventListener('click', function(){
 	heroWizard.introduce()
