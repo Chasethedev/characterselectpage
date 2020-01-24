@@ -1,2 +1,2 @@
 # characterselectpage
-practicing es6 classes with a character selectpage
+practicing es6 classes with a character selectp age
