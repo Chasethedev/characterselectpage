@@ -12,7 +12,7 @@
 }
 
 h1 {
-	margin-top: 2%;
+	margin-top: 1%;
 	align-self: center;
 }
 
@@ -20,9 +20,7 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column-reverse;	
-	text-align: center;
-	margin-top: 2%;
-	
+	text-align: center;	
 }
 
 .heroPicStyle{	
@@ -36,28 +34,24 @@ h1 {
 
 .wizardbg {
 	background: url('img/wizardhero.jpg') no-repeat top center;
+	color: purple;
 }
 
 .warriorbg {
 	background: url('img/warriorhero.jpg') no-repeat top center;
+	color: red;
 }
 
 .tankbg {
 	background: url('img/tankerhero.jpg') no-repeat top center;
+	color: gold;
 }
-
 
 #btnContainer {
 	display: flex;
 	justify-content: space-around;
-}
-
-.genericBtnWrap {
-	border-radius: 50px;
-	height: 80px;
-	width: 80px;
-	margin-bottom: 2%;
-	/*box-shadow: 0px 2px 6px 2px;*/
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 
 .genericBtn {
@@ -66,41 +60,122 @@ h1 {
 	width: 90px;
 	font-size: 18px;
 	border: 0px solid black;
-	border-bottom: 3px solid black;
 	align-self: flex-end;
 	outline: none;	
-	transform: translateY(0px);
-	transition: 1s;
 	text-align: center;
 }
 
-.genericBtn:hover {
-	cursor: pointer;
+#wizardBtnWrap {
+	border-radius: 50px;
+	background: url('img/wizardbtn.jpg') no-repeat center center;
+	background-size: cover;
+	height: 90px;
+	width: 90px;
+	color: purple;
+	box-shadow: 0px 0px 12px 6px;
+	transform: translateY(0px);
+	transition: 1s;
+}
+#wizardBtnWrap:hover {
 	color: white;
 	transform: translateY(-6px);
 	transition: 1s;
+	background-color: none;
 }
-.genericBtn:active {
-	cursor: pointer;
+#wizardBtnWrap:active {
 	color: white;
 	transform: translateY(-3.5px);
 	transition: 0s;
+	box-shadow: 0px 0px 6px 3px;
 }
-
 #wizard {
-	background-color: purple;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: Papyrus;
+	font-size: 22px;
+	transition: 3s;
+}
+#wizard:hover {
+	background-color: rgba(0, 0, 0, 0);
+	transition: 3s;
+	color: black;
 }
 
+
+#warriorBtnWrap {
+	border-radius: 50px;
+	background: url('img/warriorbtn.jpg') no-repeat center center;
+	background-size: cover;
+	height: 90px;
+	width: 90px;
+	color: red;
+	box-shadow: 0px 0px 12px 6px;
+	transform: translateY(0px);
+	transition: 1s;
+}
+#warriorBtnWrap:hover {
+	color: black;
+	transform: translateY(-6px);
+	transition: 1s;
+	background-color: none;
+}
+#warriorBtnWrap:active {
+	color: black;
+	transform: translateY(-3.5px);
+	transition: 0s;
+	box-shadow: 0px 0px 6px 3px;
+}
 #warrior {
-	background-color: blue;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: Papyrus;
+	font-size: 22px;
+	transition: 3s;
+}
+#warrior:hover {
+	background-color: rgba(0, 0, 0, 0);
+	transition: 3s;
+	color: black;
+}
+
+#tankBtnWrap {
+	border-radius: 50px;
+	background: url('img/tankbtn.jpg') no-repeat center bottom;
+	background-size: cover;
+	height: 90px;
+	width: 90px;
+	color: #EEB843;
+	box-shadow: 0px 0px 12px 6px;
+	transform: translateY(0px);
+	transition: 1s;
+}
+#tankBtnWrap:hover {
+	color: white;
+	transform: translateY(-6px);
+	transition: 1s;
+	background-color: none;
+}
+#tankBtnWrap:active {
+	color: white;
+	transform: translateY(-3.5px);
+	transition: 0s;
+	box-shadow: 0px 0px 6px 3px;
 }
 
 #tank {
-	background-color: orange;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: Papyrus;
+	font-size: 22px;
+	transition: 3s;
 }
-
-#sorceress {
-	background-color: darkred;
+#tank:hover {
+	background-color: rgba(0, 0, 0, 0);
+	transition: 3s;
+	color: black;
 }
 
 .heroQuoteBtnStyle {
@@ -109,19 +184,38 @@ h1 {
 	font-size: 16px;
 	border-radius: 8px;
 	align-self: center;
-	background-color: grey;
+	background-color: rgba(139, 34, 26, 0.85);
 	color: white;
 	cursor: pointer;
 	outline: none;
 	font-family: Papyrus;
 	line-height: 1.2;
-	padding-top: 3px;
-
+	padding-top: 3px;	
+	margin-top: 1.5%;
+	box-shadow: 0px 4px 8px;
 }
 
 .heroQuoteBtnStyle:hover {
-	background-color: red;
+	background-color: rgba(139, 34, 26, 1);
 }
+
+.heroInfoStyle {
+	background: url('img/heroinfobg.jpg') no-repeat center center;
+	background-size: 100%;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	max-width: 550px;
+    padding: 3px 10px;
+    align-self: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px;
+    border: 1px solid black;
+}
+
+
+
+
 
 
 

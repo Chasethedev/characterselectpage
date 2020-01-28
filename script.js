@@ -1,5 +1,6 @@
 let heroDiv = document.getElementById('heroDiv');
 let heroInfo = document.createElement('p');
+heroInfo.classList.add('heroInfoStyle')
 let heroPic = document.createElement('div');
 let wizardbtn = document.getElementById('wizard')
 let warriorbtn = document.getElementById('warrior')
@@ -44,7 +45,7 @@ class Warrior extends Hero {
 		super(type, ability, gender)
 	}
 	quote() {
-		heroInfo.innerText = `"Let he who opposes that what is just and right meet the worlds greatest ${this.type} and fall upon ${this.ability}!" Let the immoral feel the power of the virtuous. Let the merciless die mercilessly.`;
+		heroInfo.innerText = `"Let he who opposes that what is just and right meet the worlds greatest ${this.type} and fall upon ${this.ability}! Let the immoral feel the power of the virtuous. Let the merciless die mercilessly."`;
 	}
 }
 
@@ -53,7 +54,7 @@ class Tank extends Hero {
 		super(type, ability, gender)
 	}
 	quote() {
-		heroInfo.innerText = `"I am a ${this.type} that lives by a code. Let my ${this.ability} offer protection to all of those who accompany me into battle. None of my sworn brothers shall fall before I fall myself!"`;
+		heroInfo.innerText = `"I am a ${this.type} that lives by a code. Let my ${this.ability} offer protection to those who accompany me into battle. None of my sworn brothers shall fall before I fall myself!"`;
 	}
 }
 
@@ -74,7 +75,7 @@ wizardbtn.addEventListener('click', function(){
 		tankQuoteBtn.remove()
 	}
 		wizardQuoteBtn.addEventListener('click', function(){
-			wizardQuoteBtn.remove()
+			// wizardQuoteBtn.remove()
 			heroWizard.quote();
 		})
 });
@@ -91,7 +92,7 @@ warriorbtn.addEventListener('click', function(){
 		tankQuoteBtn.remove()
 	}
 		warriorQuoteBtn.addEventListener('click', function(){
-			warriorQuoteBtn.remove();
+			// warriorQuoteBtn.remove();
 			heroWarrior.quote();
 	})
 });
@@ -108,14 +109,10 @@ tankbtn.addEventListener('click', function(){
 	}
 	heroPic.classList.add('heroPicStyle', 'tankbg')
 		tankQuoteBtn.addEventListener('click', function(){
-			tankQuoteBtn.remove();
+			// tankQuoteBtn.remove();
 			heroTank.quote();
 	})
 });
 
-
-// heroDiv.removeChild(wizardQuoteBtn);
-// heroDiv.removeChild(tankQuoteBtn);
-// heroDiv.removeChild(warriorQuoteBtn);
 
 
